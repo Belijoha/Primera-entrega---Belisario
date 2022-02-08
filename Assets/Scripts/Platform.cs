@@ -55,4 +55,22 @@ public class Platform : MonoBehaviour
         yield return new WaitForFixedUpdate();
         moveNext = true;
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "MaleFreeSimpleMovement1")
+        {
+            collision.collider.transform.SetParent(transform);
+            Debug.Log("player hit: " + transform.name);
+        }
+    }
+
+    void OnCollisionExit(Collision collison)
+    {
+        if (collison.gameObject.tag == "MaleFreeSimpleMovement1")
+        {
+            collison.collider.transform.SetParent(null);
+            Debug.Log("player left: " + transform.name);
+        }
+    }
 }
