@@ -11,6 +11,7 @@ public class Platform : MonoBehaviour
 
     bool moveNext = true;
     public float timeToNext = 2.0f;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class Platform : MonoBehaviour
         startPosition = transform.position;
         endPosition = new Vector3(6.5f, 0.66f, -5.6f);
         targetPosition = endPosition;
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -56,21 +58,18 @@ public class Platform : MonoBehaviour
         moveNext = true;
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.collider.tag == "MaleFreeSimpleMovement1")
+        if (other.gameObject == player)
         {
-            collision.collider.transform.SetParent(transform);
-            Debug.Log("player hit: " + transform.name);
+            player.transform.parent = transform;
         }
     }
-
-    void OnCollisionExit(Collision collison)
+    private void OnCollisionExit(Collision other)
     {
-        if (collison.gameObject.tag == "MaleFreeSimpleMovement1")
+        if (other.gameObject == player)
         {
-            collison.collider.transform.SetParent(null);
-            Debug.Log("player left: " + transform.name);
+            player.transform.parent = null;
         }
     }
 }
