@@ -5,17 +5,64 @@ using UnityEngine;
 public class Cubos : MonoBehaviour
 
     {
-        public float BouncingForce = 2f;
-        public Rigidbody PlayerBall;
+    Vector3 startPosition;
+    public Vector3 endPosition;
+    Vector3 targetPosition;
 
-        private void Start()
+    bool moveNext = true;
+    public float timeToNext = 4.0f;
+    
+
+    public float force = 2;
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        startPosition = transform.position;
+        
+        targetPosition = endPosition;
+        
+
+       
+      
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    private void FixedUpdate()
+    {
+        if (moveNext)
         {
-            PlayerBall = gameObject.GetComponent<Rigidbody>();
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime);
+
         }
 
-        private void OnTriggerEnter(Collider other)
+        if (Vector3.Distance(transform.position, targetPosition) <= 0)
         {
-            if (other.tag == "Player")
-                PlayerBall.AddForce(Vector3.up * BouncingForce);
+            StartCoroutine(TimeMove());
+            if (targetPosition == endPosition)
+            {
+                targetPosition = startPosition;
+            }
+            else
+            {
+                targetPosition = endPosition;
+            }
+
+
+
         }
     }
+    IEnumerator TimeMove()
+    {
+        moveNext = false;
+        yield return new WaitForFixedUpdate();
+        moveNext = true;
+    }
+
+   
+}
