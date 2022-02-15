@@ -7,18 +7,15 @@ public class Tile : MonoBehaviour
     
     float timeStood = 0f;
     private GameObject player;
+    Vector3 startposition;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        transform.position = startposition;
       
     }
 
-   
-    void Update()
-    {
-
-    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject == player)
@@ -33,6 +30,7 @@ public class Tile : MonoBehaviour
         if (other.gameObject == player)
         {
             GetComponent<Rigidbody>().useGravity = false;
+            transform.position = startposition;
         }
     }
 }

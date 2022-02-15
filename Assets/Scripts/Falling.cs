@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
-    public float fallDelay = 3.0f;
+    private const float fallDelay = 0.5f;
+    private const float fallBack = 2.0f;
+    Vector3 startPosition;
     private GameObject player;
     
 
@@ -12,6 +14,7 @@ public class Falling : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        startPosition = transform.position;
     }
     void OnCollisionEnter(Collision other)
     {
@@ -26,7 +29,7 @@ public class Falling : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            
+            StartCoroutine(ReturnDelay());
         }
     }
 
@@ -34,6 +37,18 @@ public class Falling : MonoBehaviour
     {
         yield return new WaitForSeconds(fallDelay);
         GetComponent<Rigidbody>().isKinematic = false;
-        
+
+
+    }
+
+    IEnumerator ReturnDelay()
+    {
+        yield return new WaitForSeconds(fallBack);
+        transform.position = startPosition;
+        GetComponent<Rigidbody>().isKinematic = true;
+
+
     }
 }
+
+
