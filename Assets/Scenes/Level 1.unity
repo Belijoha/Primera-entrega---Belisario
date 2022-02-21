@@ -1523,6 +1523,14 @@ PrefabInstance:
       propertyPath: fallBack
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name
       value: Stones Tile Variant (3)
@@ -1617,7 +1625,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289167252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f625031ac2936a4ba1cbc26b78c2ef0, type: 3}
   m_Name: 
@@ -1638,6 +1646,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 0
+--- !u!114 &289167259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289167252}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95becd2c7640184db3143f5b4119105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &289167260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289167252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e735f552443f40ae903716d68b0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveState: 0
 --- !u!1 &289393284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,8 +1748,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289393284}
-  m_LocalRotation: {x: 0.2858112, y: -0.22585304, z: 0.06950769, w: 0.92869323}
-  m_LocalPosition: {x: -6.775698, y: 5.4816403, z: 6.444337}
+  m_LocalRotation: {x: 0.28581414, y: -0.22581121, z: 0.06949478, w: 0.9287034}
+  m_LocalPosition: {x: 9.420921, y: 5.4816375, z: -12.809862}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2572,6 +2605,14 @@ PrefabInstance:
       propertyPath: fallBack
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name
       value: Stones Tile Variant
@@ -3044,7 +3085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.107
+      value: 7.09
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3052,7 +3093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.954
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3618,8 +3659,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654143998}
-  m_LocalRotation: {x: 0.2858112, y: -0.22585304, z: 0.06950769, w: 0.92869323}
-  m_LocalPosition: {x: -6.775698, y: 5.4816403, z: 6.444337}
+  m_LocalRotation: {x: 0.28581414, y: -0.22581121, z: 0.06949478, w: 0.9287034}
+  m_LocalPosition: {x: 9.420921, y: 5.4816375, z: -12.809862}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2066445355}
@@ -6458,7 +6499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319089670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f625031ac2936a4ba1cbc26b78c2ef0, type: 3}
   m_Name: 
@@ -6479,6 +6520,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 0
+--- !u!114 &1319089677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319089670}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95becd2c7640184db3143f5b4119105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1319089678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319089670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e735f552443f40ae903716d68b0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveState: 0
 --- !u!1001 &1341997127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6489,6 +6555,14 @@ PrefabInstance:
     - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: fallBack
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name
@@ -6621,6 +6695,14 @@ PrefabInstance:
     - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: fallBack
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name
@@ -9417,6 +9499,14 @@ PrefabInstance:
       propertyPath: fallBack
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name
       value: Stones Tile Variant (4)
@@ -9716,6 +9806,14 @@ PrefabInstance:
     - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: fallDelay
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988434, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054988437, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940714972422554482, guid: dd8a0a1b844f31d4084d7d1705872ea3, type: 3}
       propertyPath: m_Name

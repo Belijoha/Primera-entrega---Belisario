@@ -5,32 +5,41 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     
-    float timeStood = 0f;
+    
     private GameObject player;
     Vector3 startposition;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        transform.position = startposition;
-      
+        startposition = transform.position;
+        
+
+
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject == player)
         {
-            timeStood += Time.deltaTime;
-            if (timeStood > 3) 
-                GetComponent<Rigidbody>().useGravity = true;
+           
+            
+            GetComponent<Rigidbody>().useGravity = true;
+          
         }
     }
     private void OnCollisionExit(Collision other)
     {
         if (other.gameObject == player)
         {
-            GetComponent<Rigidbody>().useGravity = false;
+            
+            
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
             transform.position = startposition;
+            GetComponent<Rigidbody>().isKinematic = true;
+            
+            GetComponent<Rigidbody>().useGravity = true;
+            
         }
     }
 }
